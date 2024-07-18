@@ -1,25 +1,28 @@
-# My Logger
+# LogPulse
 
-**My Logger** é um pacote simples para registro de logs em arquivos, com suporte para diferentes tipos de log e formatação de timestamp.
+**LogPulse** é um pacote simples para registro de logs em arquivos, com suporte para diferentes tipos de log e formatação de timestamp.
 
 ## Instalação
 
-Para instalar o **My Logger** via npm, execute o seguinte comando:
+Para instalar o **LogPulse** via npm, execute o seguinte comando:
 
-npm install my-logger
-
+```bash
+npm install log-pulse
+```
 
 ## Uso
 
 Depois de instalar o pacote, você pode usá-lo em seu código Node.js para registrar mensagens de log. Aqui está um exemplo básico:
 
-const log = require('my-logger');
+```javascript
+const log = require('log-pulse');
 
 // Registrar uma mensagem de log de informação
 log('Esta é uma mensagem de informação');
 
 // Registrar uma mensagem de log de erro
 log('Esta é uma mensagem de erro', 'error');
+```
 
 ### Estrutura do Log
 
@@ -35,16 +38,21 @@ Para garantir que o seu logger está funcionando conforme o esperado, você pode
 
 1. Instale o Jest como uma dependência de desenvolvimento:
 
+   ```bash
    npm install --save-dev jest
+   ```
 
 2. Adicione um script de teste no seu `package.json`:
 
+   ```json
    "scripts": {
      "test": "jest"
    }
+   ```
 
 3. Crie um arquivo de teste, por exemplo, `test/logger.test.js`, com o seguinte conteúdo:
 
+   ```javascript
    const fs = require('fs');
    const path = require('path');
    const log = require('../lib/logger');
@@ -66,14 +74,17 @@ Para garantir que o seu logger está funcionando conforme o esperado, você pode
      const logContent = fs.readFileSync(logFilePath, 'utf8');
      expect(logContent).toContain(message);
    });
+   ```
 
 4. Execute os testes com o comando:
 
+   ```bash
    npm test
+   ```
 
 ## Contribuição
 
-Se você deseja contribuir com o **My Logger**, sinta-se à vontade para abrir uma issue ou enviar um pull request no [repositório do GitHub](https://github.com/otaciobarbosa/my-logger). Seu feedback e contribuições são bem-vindos!
+Se você deseja contribuir com o **LogPulse**, sinta-se à vontade para abrir uma issue ou enviar um pull request no [repositório do GitHub](https://github.com/otaciobarbosa/log-pulse). Seu feedback e contribuições são bem-vindos!
 
 ## Licença
 
