@@ -1,6 +1,6 @@
 {
     "name": "log-pulse",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Mantém o pulso das suas operações com uma visão detalhada dos logs.",
     "main": "lib/logger.js",
     "scripts": {
