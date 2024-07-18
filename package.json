@@ -1,7 +1,7 @@
 {
-    "name": "my-logger",
-    "version": "1.0.0",
-    "description": "A simple logging package",
+    "name": "log-pulse",
+    "version": "1.0.2",
+    "description": "Mantém o pulso das suas operações com uma visão detalhada dos logs.",
     "main": "lib/logger.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
